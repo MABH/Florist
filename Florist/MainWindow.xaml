@@ -1,0 +1,106 @@
+﻿<Window x:Class="Florist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Florist"
+        mc:Ignorable="d"
+        Title="Florist Creator" Height="450" Width="800">
+    <Grid>
+        <Button Content="Create Florist" HorizontalAlignment="Left" Margin="50,35,0,0" VerticalAlignment="Top" Width="115" Background="#FFFFD178" FontFamily="Segoe UI Black" Height="27" FontSize="14"
+                Click="Create_Click" BorderThickness="0">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <Grid Name="NameGrid" Visibility="Hidden">
+            <TextBox Name="NameText" HorizontalAlignment="Left" Height="23" Margin="238,39,0,0" TextWrapping="Wrap" Text="Florist name: " VerticalAlignment="Top" Width="308" FontWeight="Bold" FontSize="14">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button Name="Save" Content="Save" HorizontalAlignment="Left" Margin="580,41,0,0" VerticalAlignment="Top" Width="75" Background="#FFFFD178" FontFamily="Segoe UI Black" FontSize="14"
+                    Click="Save_Click" BorderThickness="0">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+
+        <Button Content="Add Decor" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" Width="115" Background="#FFFFD178" FontFamily="Segoe UI Black" Height="27" FontSize="14"
+            Click="Decor_Click" BorderThickness="0">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <Button Content="Add Flower" HorizontalAlignment="Left" Margin="238,110,0,0" VerticalAlignment="Top" Width="115" Background="#FFFFD178" FontFamily="Segoe UI Black" Height="27" FontSize="14"
+            Click="Flower_Click" BorderThickness="0">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Add Tree" HorizontalAlignment="Left" Margin="431,110,0,0" VerticalAlignment="Top" Width="115" Background="#FFFFD178" FontFamily="Segoe UI Black" Height="27" FontSize="14"
+            Click="Tree_Click" BorderThickness="0">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Stock List" HorizontalAlignment="Left" Margin="634,110,0,0" VerticalAlignment="Top" Width="115" Background="#FFFFD178" FontFamily="Segoe UI Black" Height="27" FontSize="14"
+            Click="Stock_Click" BorderThickness="0">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        
+        
+        <StackPanel Name ="Data"  HorizontalAlignment="Center" Height="137" Margin="174,210,124.286,0" VerticalAlignment="Top" Width="496" Visibility="Hidden">
+            <TextBox Name="Element1" Height="26" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Name="Element2" Height="26" TextWrapping="Wrap" Text="TextBox"/>
+            <Button Name ="Add" Content="Add Element" Background="#FFFFD178" FontWeight="Bold" Height="24"
+                    Click="Add_Click"/>
+            <Button Name="Back" Content="Back" Width="76" Click="Back_Click" BorderThickness="0" Background="#FFFFD178" FontSize="16" FontWeight="Bold" Margin="210,20" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Name ="DataDecor"  HorizontalAlignment="Center" Height="137" Margin="174,210,124.286,0" VerticalAlignment="Top" Width="496" Visibility="Hidden">
+            <ComboBox Name ="Combo">
+                <ComboBoxItem IsSelected="True">Wood</ComboBoxItem>
+                <ComboBoxItem>Plastic</ComboBoxItem>
+            </ComboBox>
+            <TextBox Name="Element2Decor" Height="26" TextWrapping="Wrap" Text="TextBox"/>
+            <Button Name ="Add2" Content="Add Element" Background="#FFFFD178" FontWeight="Bold" Height="24"
+                    Click="Add2_Click"/>
+            <Button Name="Back2" Content="Back" Width="76"
+                Click="Back_Click" BorderThickness="0" Background="#FFFFD178" FontSize="16" FontWeight="Bold" Margin="210,20" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+        
+        <StackPanel Name="PanelList" Visibility="Hidden" HorizontalAlignment="Left" Height="210" Margin="238,178,0,0" VerticalAlignment="Top" Width="359">
+            <TextBlock TextWrapping="Wrap" Text="Stock List" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+            <ListView Name="StockList" HorizontalAlignment="Left" Height="150" VerticalAlignment="Bottom" Width="360"
+                  VerticalContentAlignment="Top"  
+                  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  ScrollViewer.CanContentScroll="False" Margin="0,0,-1.143,0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Name="Back3" Content="Back" Width="76" 
+                Click="Back_Click" BorderThickness="0" Background="#FFFFD178" FontSize="16" FontWeight="Bold" Margin="0,10" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

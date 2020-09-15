@@ -1,0 +1,15 @@
+C:\Users\Miguel Angel\source\repos\Florist\Florist\bin\Debug\Florist.exe.config
+C:\Users\Miguel Angel\source\repos\Florist\Florist\bin\Debug\Florist.exe
+C:\Users\Miguel Angel\source\repos\Florist\Florist\bin\Debug\Florist.pdb
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.csprojAssemblyReference.cache
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\MainWindow.g.cs
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\App.g.cs
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist_MarkupCompile.cache
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist_MarkupCompile.lref
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\MainWindow.baml
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.g.resources
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.Properties.Resources.resources
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.csproj.GenerateResource.cache
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.exe
+C:\Users\Miguel Angel\source\repos\Florist\Florist\obj\Debug\Florist.pdb
